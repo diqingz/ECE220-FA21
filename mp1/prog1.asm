@@ -104,7 +104,7 @@ PRINT_HIST
 ; for your implementation, list registers used in this part of the code,
 ; and provide sufficient comments
 
-; partner netid: zijun6, staceyl2
+; partner netid: zijunz6, staceyl2
 
 ; This part of the program prints out the histogram to the console. 
 ; In the PRINTING_LOOP, the character is computed (ASCII of '@' + counter 
