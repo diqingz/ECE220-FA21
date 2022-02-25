@@ -1,0 +1,13 @@
+Compilation Results: 
+********************
+semiprime.c:11:1: error: "/*" within comment [-Werror=comment]
+ /*
+ ^
+cc1: all warnings being treated as errors
+Compilation unsuccessful. Stopping.
+Failed nightly test!!!
+This nightly test is focusing on compilation error not functionality test.
+This nightly report only tests on the released testcases.
+There are many hidden edge testcase for the MP. Please test it yourselve.
+HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
+Timestamp: 2022-02-25_00:20:53
