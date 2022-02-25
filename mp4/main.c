@@ -23,6 +23,6 @@ int main(){
      return -1;
    }
 
-   ret = print_semiprimes(a, b)
+   ret = print_semiprimes(a, b);
    return ret;
 }
