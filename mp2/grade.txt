@@ -1,0 +1,353 @@
+Compilation Results:
+********************
+STARTING PASS 1
+0 errors found in first pass.
+STARTING PASS 2
+0 errors found in second pass.
+
+Test 1 (10 pts) Answer = xC: 1 2 4 + 5 + +
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+1 2 4 + 5 + + =000C
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0043 R4=x30FD R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+not stored in R5
+Test 2 (10 pts) Answer = invalid: 1 2 3 4 +
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+1 2 3 4 + =invalid expression
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x30D1 R3=xC003 R4=x0002 R5=x0007 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+test 2 failed
+Test 3 (10 pts) Answer = invalid: 1 2 + + +
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+1 2 + +invalid expression
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=xFFD0 R3=x0000 R4=x4000 R5=x0001 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Unknown command.  Type 'h' for help.
+
+test 3 failed
+Test 4 (10 pts) Answer = x8: 2 3 ^
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+2 3 ^ =0008
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0038 R4=x30F9 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+Do not stored in R5
+Test 5 (10 pts) Answer = x1C: 7 4 *
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+7 4 * =001C
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0043 R4=x30FD R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+Do not stored in R5
+Test 6 (5 pts) Answer = x2: 4 2 /
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+4 2 / =0002
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0032 R4=x30F3 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+Do not stored in R5
+Test 7 (5 pts) Answer = x0: 1 2 /
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+1 2 / =0000
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0030 R4=x30F1 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+Test 8 (10 pts) Answer = xFFFD: 2 5 -
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+2 5 - =FFFD
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0044 R4=x30FE R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Do not stored in R5
+Test 9 (10 pts) Answer = xE: 5 1 2 + 4 * + 3 -
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+5 1 2 + 4 * + 3 - =000E
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0045 R4=x30FF R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+
+Do not stored in R5
+Test 10 (10 pts) Answer = x12: 5 2 8 * + 3 -
+
+Welcome to the LC-3 simulator.
+
+The contents of the LC-3 tools distribution, including sources, management
+tools, and data, are Copyright (c) 2003 Steven S. Lumetta.
+
+The LC-3 tools distribution is free software covered by the GNU General
+Public License, and you are welcome to modify it and/or distribute copies
+of it under certain conditions.  The file COPYING (distributed with the
+tools) specifies those conditions.  There is absolutely no warranty for
+the LC-3 tools distribution, as described in the file NO_WARRANTY (also
+distributed with the tools).
+
+Have fun.
+
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0000 R4=x0000 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Loaded "mp2.obj" and set PC to x3000
+WARNING: No symbols are available.
+Will not use stdin for LC-3 console input during script execution.
+5 2 8 * + 3 - =0012
+
+--- halting the LC-3 ---
+
+PC=x0494 IR=xB1AE PSR=x0400 (ZERO)
+R0=x0000 R1=x7FFF R2=x0000 R3=x0032 R4=x30F3 R5=x0000 R6=x0000 R7=x0490 
+                   x0494 x0FF9 BRNZP TRAP_HALT
+Do not stored in R5
+
+Grade:
+******
+Late submission: 0
+Functionality: 63
+Comments and Style: 5 
+Intro paragraph: 5 
+Total: 73 
