@@ -32,8 +32,30 @@ prog5.c:31:12: error: ‘solution4’ defined but not used [-Werror=unused-varia
  static int solution4;
             ^
 cc1: all warnings being treated as errors
-This nightly test is focusing on compilation error not functionality test.
-This nightly report only tests on the released testcases.
-There are many hidden edge testcase for the MP. Please test it yourselve.
-HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
-Timestamp: 2022-02-27_00:30:12
+In file included from grade/mp5_grading.c:30:0:
+grade/stuprog5.c:27:12: error: ‘guess_number’ defined but not used [-Werror=unused-variable]
+ static int guess_number;
+            ^
+grade/stuprog5.c:28:12: error: ‘solution1’ defined but not used [-Werror=unused-variable]
+ static int solution1;
+            ^
+grade/stuprog5.c:29:12: error: ‘solution2’ defined but not used [-Werror=unused-variable]
+ static int solution2;
+            ^
+grade/stuprog5.c:30:12: error: ‘solution3’ defined but not used [-Werror=unused-variable]
+ static int solution3;
+            ^
+grade/stuprog5.c:31:12: error: ‘solution4’ defined but not used [-Werror=unused-variable]
+ static int solution4;
+            ^
+cc1: all warnings being treated as errors
+
+Total points for make_guess: 
+
+Grade:
+******
+Late submission: 0
+Functionality: 0
+Comments and Style: 
+Intro paragraph: 
+Total: 
