@@ -7,7 +7,7 @@
     This program mimics the board game Mastermind, generates a random sequence of 4 numbers from 1-8 using a user input seed. 
     The user has 12 guesses to win the game. In the process, the game will tell how many perfect and misplaced matches were made. 
 
-    Partners: diqingz2, mohan19
+    Partners: staceyl2, mohan19
  */
 
 
