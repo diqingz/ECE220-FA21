@@ -1,28 +1,19 @@
-/*			
- *
- * prog5.c - source file adapted from UIUC ECE198KL Spring 2013 Program 4
- *           student code -- GOLD VERSION by Steven S. Lumetta
- */
-
-
 /*
- * The functions that you must write are defined in the header file.
- * Blank function prototypes with explanatory headers are provided
- * in this file to help you get started.
- */
+   prog5.c - source file adapted from UIUC ECE198KL Spring 2013 Program 4
+             student code -- GOLD VERSION by Steven S. Lumetta
+    (The functions set_seed, start_game and make_guess are defined in the header file). 
 
+    Intro paragraph: 
+    This program mimics the board game Mastermind, generates a random sequence of 4 numbers from 1-8 using a user input seed. 
+    The user has 12 guesses to win the game. In the process, the game will tell how many perfect and misplaced matches were made. 
+
+    Partners: diqingz2, mohan19
+ */
 
 
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "prog5.h"
-
-
-/*
- * You will need to keep track of the solution code using file scope
- * variables as well as the guess number.
- */
 
 static int guess_number;
 static int solution1;
@@ -48,21 +39,20 @@ static int solution4;
 int
 set_seed (const char seed_str[])
 {
-//    Example of how to use sscanf to read a single integer and check for anything other than the integer
-//    "int seed" will contain the number typed by the user (if any) and the string "post" will contain anything after the integer
-//    The user should enter only an integer, and nothing else, so we will check that only "seed" is read. 
-//    We declare
-//    int seed;
-//    char post[2];
-//    The sscanf statement below reads the integer into seed. 
-//    sscanf (seed_str, "%d%1s", &seed, post)
+      int seed;
+      char post[2];
+//    The sscanf statement below reads the integer into seed, everything else will go to post. 
+      int sscanfRet = sscanf (seed_str, "%d%1s", &seed, post);
 //    If there is no integer, seed will not be set. If something else is read after the integer, it will go into "post".
 //    The return value of sscanf indicates the number of items read succesfully.
 //    When the user has typed in only an integer, only 1 item should be read sucessfully. 
 //    Check that the return value is 1 to ensure the user enters only an integer. 
-//    Feel free to uncomment these statements, modify them, or delete these comments as necessary. 
-//    You may need to change the return statement below
-   
+
+      if (sscanfRet == 1) {
+          srand(seed);
+          return 1;
+      }
+    printf("set_seed: invalid seed\n");
     return 0;
 }
 
@@ -85,8 +75,19 @@ set_seed (const char seed_str[])
 void
 start_game (int* one, int* two, int* three, int* four)
 {
-    //your code here
-    
+    guess_number = 1;
+
+    // make random nunbers that in range 1-8.
+    solution1 = rand() % 8 + 1;
+    solution2 = rand() % 8 + 1;
+    solution3 = rand() % 8 + 1;
+    solution4 = rand() % 8 + 1;
+
+    // set the content of the addresses one-four to the solutions
+    *one = solution1;
+    *two = solution2;
+    *three = solution3;
+    *four = solution4;
 }
 
 /*
@@ -113,20 +114,66 @@ start_game (int* one, int* two, int* three, int* four)
  *               (NOTE: the output format MUST MATCH EXACTLY, check the wiki writeup)
  */
 int
-make_guess (const char guess_str[], int* one, int* two, 
-	    int* three, int* four)
+make_guess (const char guess_str[], int* one, int* two, int* three, int* four)
 {
-//  One thing you will need to read four integers from the string guess_str, using a process
-//  similar to set_seed
-//  The statement, given char post[2]; and four integers w,x,y,z,
-//  sscanf (guess_str, "%d%d%d%d%1s", &w, &x, &y, &z, post)
-//  will read four integers from guess_str into the integers and read anything else present into post
+    // read 4 integers from user guess input, everything else will go to post.
+    char post[2]; 
+    int sscanfRet = sscanf (guess_str, "%d%d%d%d%1s", one, two, three, four, post);
+    int guessArr[4];
+    guessArr[0] = *one;
+    guessArr[1] = *two;
+    guessArr[2] = *three;
+    guessArr[3] = *four;
+
+    int solArr[4];
+    solArr[0] = solution1;
+    solArr[1] = solution2;
+    solArr[2] = solution3;
+    solArr[3] = solution4;
+
+    // 1 means paired, 0 means unpaired.
+    int guessPaired[] = {0,0,0,0}; 
+    int solPaired[] = {0,0,0,0};
+
+
+    int perfMatch = 0;
+    int misplacedMatch = 0;
+    
 //  The return value of sscanf indicates the number of items sucessfully read from the string.
 //  You should check that exactly four integers were sucessfully read.
 //  You should then check if the 4 integers are between 1-8. If so, it is a valid guess
 //  Otherwise, it is invalid.  
-//  Feel free to use this sscanf statement, delete these comments, and modify the return statement as needed
-    return 1;
+    if (sscanfRet == 4) {
+        if (*one >= 1 && *one <= 8 && *two >= 1 && *two <= 8 && *three >= 1 && *three <= 8 && *four >= 1 && *four <= 8) {
+            // perfect match
+            for (int i = 0; i < 4; i++) {
+                if (guessArr[i] == solArr[i]) {
+                    perfMatch ++;
+                    guessPaired[i] = 1;
+                    solPaired[i] = 1;
+                }
+            }
+            
+            // misplaced match
+            for (int i = 0; i < 4; i++) {
+                if (guessPaired[i] == 0) {
+                    for (int j = 0; j < 4; j++) { // j is for the solution index
+                        if (guessArr[i] == solArr[j] && solPaired[j] == 0) {
+                            misplacedMatch ++;
+                            guessPaired[i] = 1;
+                            solPaired[j] = 1;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            printf("With guess %d, you got %d perfect matches and %d misplaced matches.\n", guess_number, perfMatch, misplacedMatch);
+            guess_number ++;
+            return 1;
+        }
+    }
+
+    printf("make_guess: invalid guess\n");
+    return 0;
 }
-
-
