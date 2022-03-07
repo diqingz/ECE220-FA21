@@ -1,0 +1,30 @@
+Compilation Results:
+********************
+
+Test Case 1:
+********************
+test1 passed
+
+Test Case 2:
+********************
+test2 passed
+
+Test Case 3:
+********************
+test3 passed
+
+Test Case 4:
+********************
+test4 passed
+
+Test Case 5:
+********************
+test5 failed
+
+Grade:
+******
+Late submission: 0
+Functionality: 72 
+Comments and Style: 5 
+Intro paragraph: 5
+Total: 82
