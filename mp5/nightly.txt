@@ -1,0 +1,119 @@
+Compilation Results:
+********************
+
+Testing three output files
+*******3 Outputs Match Exactly: 10/10*******
+******total set_seed score: 20/20*******
+******total start_game score: 20/20*******
+
+Testing make_guess with 20 different test cases
+For test case: solution[] = 1 3 7 1; input[] = 3 1 3 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 3 1 7; input[] = 3 1 1 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 3 7 1; input[] = 3 1 1 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 1 3 7; input[] = 1 3 1 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 2 3 3; input[] = 1 3 3 1
+Student Output:
+With guess 1, you got 2 perfect matches and 1 misplaced matches.
+Correct Output:
+With guess 1, you got 2 perfect matches and 1 misplaced matches.
+For test case: solution[] = 3 1 1 3; input[] = 1 3 3 3
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 3 1 1 1; input[] = 1 3 1 7
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 3 1 1 1; input[] = 1 3 3 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 3 3 1; input[] = 3 3 1 1
+Student Output:
+With guess 1, you got 2 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 2 perfect matches and 2 misplaced matches.
+For test case: solution[] = 4 4 3 1; input[] = 4 3 4 3
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 3 2 1; input[] = 3 1 1 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 3 2 1; input[] = 3 3 2 1
+Student Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+Correct Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+For test case: solution[] = 2 3 1 7; input[] = 3 1 1 2
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 1 3 7; input[] = 3 1 1 1
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 1 3 7; input[] = 1 3 1 3
+Student Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+Correct Output:
+With guess 1, you got 1 perfect matches and 2 misplaced matches.
+For test case: solution[] = 1 1 1 1; input[] = 1 1 3 1
+Student Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+Correct Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+For test case: solution[] = 1 1 3 3; input[] = 1 1 1 3
+Student Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+Correct Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+For test case: solution[] = 1 2 1 1; input[] = 1 2 1 2
+Student Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+Correct Output:
+With guess 1, you got 3 perfect matches and 0 misplaced matches.
+For test case: solution[] = 4 3 2 1; input[] = 4 3 2 1
+Student Output:
+With guess 1, you got 4 perfect matches and 0 misplaced matches.
+Correct Output:
+With guess 1, you got 4 perfect matches and 0 misplaced matches.
+For test case: solution[] = 2 2 3 3; input[] = 2 2 3 3
+Student Output:
+With guess 1, you got 4 perfect matches and 0 misplaced matches.
+Correct Output:
+With guess 1, you got 4 perfect matches and 0 misplaced matches.
+
+Total points for make_guess: 40
+
+Grade:
+******
+Late submission: 0
+Functionality: 90
+Comments and Style: 
+Intro paragraph: 
+Total: 
