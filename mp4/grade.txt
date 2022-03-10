@@ -1,0 +1,13 @@
+Compilation Results: 
+********************
+semiprime.c:11:1: error: "/*" within comment [-Werror=comment]
+ /*
+ ^
+cc1: all warnings being treated as errors
+Compilation unsuccessful. Stopping.
+Grade:
+******
+Late submission: 0
+Functionality: 0
+Intro paragraph: 0
+Total: 0
