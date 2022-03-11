@@ -1,31 +1,19 @@
 Compilation Results:
 ********************
-updateBoard.c: In function ‘countLiveNeighbor’:
-updateBoard.c:16:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-updateBoard.c: In function ‘aliveStable’:
-updateBoard.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-updateBoard.c: In function ‘countLiveNeighbor’:
-updateBoard.c:16:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-updateBoard.c: In function ‘aliveStable’:
-updateBoard.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
 
 ******Testing mp6******
 ******Test 0******
-countLiveNeighbor test failed
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
 ******Test 1******
-countLiveNeighbor test failed
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
 
-Failed the nightly test.
+Pass the nightly test!!!
 This nightly test is focusing on compilation error not functionality test.
 This nightly report only tests on the released testcases.
 There are many hidden edge testcase for the MP. Please test it yourselve.
 HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
-Timestamp: 2022-03-10_12:18:20
+Timestamp: 2022-03-11_00:25:20
