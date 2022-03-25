@@ -7,8 +7,9 @@
 // You are free to declare any private functions if needed.
 
 // Introduction paragraph: partner netID: staceyl2
-// This program aims to solve for the correct answer to put in every block of a sudoku puzzle composed of 9 3*3 grids with recursive backtracking. This program //utilizes the functions is_val_in_row, is_val_in_col, and is_value_in_3*3 zone to calculate if each possible answer fits the three basic rules in sudoku. The 
-// function is_val_valid combines and check if all three above function test passes, this would then be called in solve_sudoku function to help solve the sudoku board.
+// This program aims to solve for the correct answer to put in every block of a sudoku puzzle composed of 9 3*3 grids with recursive backtracking. 
+//This program utilizes the functions is_val_in_row, is_val_in_col, and is_value_in_3*3 zone to calculate if each possible answer fits the three basic rules in sudoku. 
+//The function is_val_valid combines and check if all three above function test passes, this would then be called in solve_sudoku function to help solve the sudoku board.
 
 
 // Function: is_val_in_row
