@@ -98,7 +98,7 @@ int is_val_valid(const int val, const int i, const int j, const int sudoku[9][9]
 
   // END TODO
 }
-
+ 
 // Procedure: solve_sudoku
 // Solve the given sudoku instance.
 int solve_sudoku(int sudoku[9][9]) {
