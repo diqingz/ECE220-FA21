@@ -1,0 +1,100 @@
+Compilation Results:
+********************
+
+******Testing mp6******
+******Test 0******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 1******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 2******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 3******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 4******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 5******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 6******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 7******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 8******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 9******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 10******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 11******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 12******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 13******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 14******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 15******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 16******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 17******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 18******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 19******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+******Test 20******
+countLiveNeighbor test passed
+updateBoard test passed
+aliveStable test passed
+
+coutLiveNeighbor test passed count: 21
+aliveStable test passed count: 21
+updateBoard test passed count: 21
+
+Grade:
+******
+Late submission: 0
+Functionality: 90
+Comments and Style: 5 
+Intro paragraph: 5
+Total: 100
