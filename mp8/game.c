@@ -1,5 +1,12 @@
 #include "game.h"
-
+//INRODUCTION paragraph:
+//Partner NetID: staceyl2
+//This program aims to create a 2048 game from C language. 
+//The game allows the user to slide in up, down, left, and right directions
+//After each slide all the cells would move towards the slided direction if there is empty cell available
+//Cells that have the same number (along the direction of the user movement) would merge and become their sum.
+//A cell cannot merge twice after a single slide from the user
+//The merging sequence would depend on the direction of the user movement.
 
 game * make_game(int rows, int cols)
 /*! Create an instance of a game structure with the given number of rows
@@ -15,6 +22,14 @@ game * make_game(int rows, int cols)
 
     //YOUR CODE STARTS HERE:  Initialize all other variables in game struct
 
+    mygame -> rows = rows;
+    mygame -> cols = cols;    //initialize rows and cols in game
+    
+    for (int i = 0; i< rows* cols; i++){
+
+      mygame -> cells[i] = -1;
+
+    }
 
     return mygame;
 }
@@ -32,7 +47,13 @@ void remake_game(game ** _cur_game_ptr,int new_rows,int new_cols)
 	(*_cur_game_ptr)->cells = malloc(new_rows*new_cols*sizeof(cell));
 
 	 //YOUR CODE STARTS HERE:  Re-initialize all other variables in game struct
-
+	for (int i=0; i<new_rows*new_cols; i++) {
+	  (*_cur_game_ptr)->cells[i] = -1;
+	}
+	(** _cur_game_ptr).rows = new_rows;     
+	(** _cur_game_ptr).cols = new_cols;  // //store new rows and cols to game
+	
+	
 	return;	
 }
 
@@ -55,6 +76,12 @@ cell * get_cell(game * cur_game, int row, int col)
 {
     //YOUR CODE STARTS HERE
 
+
+	if (row >=(cur_game->rows) || col >= (cur_game->cols) || col<0 || row<0)
+	  return NULL;
+
+	return &cur_game->cells[row * cur_game -> cols + col];
+
     return NULL;
 }
 
@@ -68,28 +95,225 @@ int move_w(game * cur_game)
 {
     //YOUR CODE STARTS HERE
 
-    return 1;
-};
+  int row, col; 
+  int check = 0;
+  int rows = cur_game->rows;
+  int cols = cur_game->cols;
+	//slide up all the cell
+	for (col = 0; col < cols; col++) {
+	  for (int i = 0; i < rows - 1; i++) {
+	    for (row = 0; row < rows - 1; row++) {
+	      if (*get_cell(cur_game, row, col) == -1) {
+		if (*get_cell(cur_game, row + 1, col) != -1) {
+		  *get_cell(cur_game, row, col) = *get_cell(cur_game, row + 1, col);
+		  *get_cell(cur_game, row + 1, col) = -1;
+		  check = 1; //indicate movement
+		}
+	      }
+	    }
+	  }
+	}
+	//merge cell
+	for (col = 0; col < cols; col++) {
+	  for (row = 0; row < rows - 1; row++) {
+	    if (*get_cell(cur_game, row, col) == *get_cell(cur_game, row + 1, col) && *get_cell(cur_game, row, col) != -1) {
+	      *get_cell(cur_game, row, col) = *get_cell(cur_game, row, col) * 2;
+	      *get_cell(cur_game, row + 1, col) = -1;
+	      cur_game->score += *get_cell(cur_game, row, col); 
+	      check = 1; // indicate movement
+			}
+		}
+	}
+	//slide up again after the merge
+	if (check==1) {
+	  for (col = 0; col < cols; col++) {
+	    for (int i = 0; i < rows - 1; i++) {
+	      for (row = 0; row < rows - 1; row++) {
+		if (*get_cell(cur_game, row, col) == -1) {
+		  if (*get_cell(cur_game, row + 1, col) != -1) {
+		    *get_cell(cur_game, row, col) = *get_cell(cur_game, row + 1, col);
+		    *get_cell(cur_game, row + 1, col) = -1;
+		    // check = 1;
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	if (check ==1)
+		return 1;
+	else return 0;
+}
 
 int move_s(game * cur_game) //slide down
 {
     //YOUR CODE STARTS HERE
 
-    return 1;
-};
+  int row, col; 
+  int check = 0;
+  int rows = cur_game->rows;
+  int cols = cur_game->cols;
+	//slide down all the cell
+	for (col = 0; col < cols; col++) {
+	  for (int i = 0; i < rows - 1; i++) {
+	    for (row = 0; row < rows - 1; row++) {
+	      if (*get_cell(cur_game, row+1, col) == -1) {
+		if (*get_cell(cur_game, row, col) != -1) {
+		  *get_cell(cur_game, row + 1, col) = *get_cell(cur_game, row, col);
+		  *get_cell(cur_game, row, col) = -1;
+		  check = 1; //indicate movement
+		}
+	      }
+	    }
+	  }
+	}
+	//merge cell
+	for (col = 0; col < cols; col++) {
+	  for (row = rows -2; row > -1; row--) {
+	    if (*get_cell(cur_game, row, col) == *get_cell(cur_game, row + 1, col) && *get_cell(cur_game, row, col) != -1) {
+	      *get_cell(cur_game, row + 1, col) = *get_cell(cur_game, row, col) * 2;
+	      *get_cell(cur_game, row, col) = -1;
+	      cur_game->score += *get_cell(cur_game, row +1, col); 
+	      check = 1; // indicate movement
+			}
+		}
+	}
+	//slide down again after the merge
+	if (check==1) {
+	  for (col = 0; col < cols; col++) {
+	    for (int i = 0; i < rows - 1; i++) {
+	      for (row = 0; row < rows - 1; row++) {
+		if (*get_cell(cur_game, row + 1, col) == -1) {
+		  if (*get_cell(cur_game, row, col) != -1) {
+		    *get_cell(cur_game, row +1, col) = *get_cell(cur_game, row, col);
+		    *get_cell(cur_game, row, col) = -1;
+		    
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	if (check ==1)
+		return 1;
+	else return 0;
+}
+
 
 int move_a(game * cur_game) //slide left
 {
     //YOUR CODE STARTS HERE
 
-    return 1;
-};
+    int row, col; 
+    int check = 0;
+    int temp;
+    int rows = cur_game->rows;
+    int cols = cur_game->cols;
+	//slide left all the cell
+    for (row = 0; row < rows; row++) {
+	  for (int i = 0; i < cols - 1; i++) {
+	    for (col = 0; col < cols - 1; col++) {
+	      if (*get_cell(cur_game, row, col) == -1) {
+		if (*get_cell(cur_game, row, col + 1) != -1) {
+		  temp = *get_cell(cur_game, row, col);
+		  *get_cell(cur_game, row, col) = *get_cell(cur_game, row, col+1);
+		  *get_cell(cur_game, row, col+1) = temp;
+		  check = 1; //indicate movement
+		}
+	      }
+	    }
+	  }
+	}
+	//merge cell
+	for (row = 0; row < rows; row++) {
+	  for (col = 0; col < cols - 1; col++) {
+	    if (*get_cell(cur_game, row, col) == *get_cell(cur_game, row, col + 1) && *get_cell(cur_game, row, col) != -1) {
+	      *get_cell(cur_game, row, col) = *get_cell(cur_game, row, col) * 2;
+	      *get_cell(cur_game, row, col + 1) = -1;
+	      cur_game->score += *get_cell(cur_game, row, col); 
+	      check = 1; // indicate movement
+			}
+		}
+	}
+	//slide left again after the merge
+	if (check==1) {
+	  for (row = 0; row < rows; row++) {
+	    for (int i = 0; i < cols - 1; i++) {
+	      for (col = 0; col < cols - 1; col++) {
+		if (*get_cell(cur_game, row, col) == -1) {
+		  if (*get_cell(cur_game, row, col + 1) != -1) {
+		    temp = *get_cell(cur_game, row, col);
+		    *get_cell(cur_game, row, col) = *get_cell(cur_game, row, col + 1);
+		    *get_cell(cur_game, row, col + 1) = temp;
+		   
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	if (check ==1)
+		return 1;
+	else return 0;
+}
+
 
 int move_d(game * cur_game){ //slide to the right
     //YOUR CODE STARTS HERE
 
-    return 1;
-};
+  int row, col; 
+    int check = 0;
+    int temp;
+    int rows = cur_game->rows;
+    int cols = cur_game->cols;
+	//slide right all the cell
+    for (row = 0; row < rows; row++) {
+	  for (int i = 0; i < cols - 1; i++) {
+	    for (col = 0; col < cols - 1; col++) {
+	      if (*get_cell(cur_game, row, col + 1) == -1) {
+		if (*get_cell(cur_game, row, col) != -1) {
+		  temp = *get_cell(cur_game, row, col);
+		  *get_cell(cur_game, row, col) = *get_cell(cur_game, row, col+1);
+		  *get_cell(cur_game, row, col+1) = temp;
+		  check = 1; //indicate movement
+		}
+	      }
+	    }
+	  }
+	}
+	//merge cell
+	for (row = 0; row < rows; row++) {
+	  for (col = cols-2; col> -1; col--) {
+	    if (*get_cell(cur_game, row, col) == *get_cell(cur_game, row, col + 1) && *get_cell(cur_game, row, col + 1) != -1) {
+	      *get_cell(cur_game, row, col+ 1) = *get_cell(cur_game, row, col + 1) * 2;
+	      *get_cell(cur_game, row, col) = -1;
+	      cur_game->score += *get_cell(cur_game, row, col + 1); 
+	      check = 1; // indicate movement
+			}
+		}
+	}
+	//slide right again after the merge
+	if (check==1) {
+	  for (row = 0; row < rows; row++) {
+	    for (int i = 0; i < cols - 1; i++) {
+	      for (col = 0; col < cols - 1; col++) {
+		if (*get_cell(cur_game, row, col + 1) == -1) {
+		  if (*get_cell(cur_game, row, col) != -1) {
+		    temp = *get_cell(cur_game, row, col);
+		    *get_cell(cur_game, row, col) = *get_cell(cur_game, row, col + 1);
+		    *get_cell(cur_game, row, col + 1) = temp;
+		   
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	if (check ==1)
+		return 1;
+	else return 0;
+}
+
 
 int legal_move_check(game * cur_game)
 /*! Given the current game check if there are any legal moves on the board. There are
@@ -98,8 +322,20 @@ int legal_move_check(game * cur_game)
  */
 {
     //YOUR CODE STARTS HERE
+  game * game_copy = malloc (sizeof(game));
+    game_copy->cells = malloc((cur_game->rows)*(cur_game->cols)*sizeof(cell));
 
-    return 1;
+   game_copy->cols = cur_game->cols;
+   game_copy->rows = cur_game->rows;
+
+    for (int i=0; i < (cur_game -> cols) * (cur_game -> rows); i++) {
+       game_copy -> cells[i] = cur_game -> cells[i];
+    }
+
+   if((move_w(game_copy)+move_a(game_copy)+move_s(game_copy)+move_d(game_copy))!= 0){    //check if any movement can be made
+        return 1;
+    }
+   return 0; //if no legal movement can be made return 0
 }
 
 
