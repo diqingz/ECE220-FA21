@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "maze.h"
-
+/*introduction paragraph: 
+partner netID: staceyl2
+This program aims to solve a maze inside a given file, where"%" would represent walls, "S" represents the starting point, and "E" represents the end point. This program utilizes recursion and backtracking to solve the maze, setting the solution path as "*", and if solution is incorrect, backtrack and turn them into "~", representing visited. The final outcome would be a printed maze with the original starting point, ending point, and walls, together with the visited path and final solution printed. Locations not visited and aren't walls,"S", or"E" are left as " "(spaces).
+*/
 
 /*
  * createMaze -- Creates and fills a maze structure from the given file
