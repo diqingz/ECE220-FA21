@@ -1,60 +1,37 @@
 Compilation Results:
 ********************
-maze.c: In function ‘createMaze’:
-maze.c:13:28: warning: unused parameter ‘fileName’ [-Wunused-parameter]
- maze_t * createMaze(char * fileName)
-                            ^
-maze.c: In function ‘destroyMaze’:
-maze.c:26:27: warning: unused parameter ‘maze’ [-Wunused-parameter]
- void destroyMaze(maze_t * maze)
-                           ^
-maze.c: In function ‘printMaze’:
-maze.c:40:25: warning: unused parameter ‘maze’ [-Wunused-parameter]
- void printMaze(maze_t * maze)
-                         ^
-maze.c: In function ‘solveMazeDFS’:
-maze.c:54:27: warning: unused parameter ‘maze’ [-Wunused-parameter]
- int solveMazeDFS(maze_t * maze, int col, int row)
-                           ^
-maze.c:54:37: warning: unused parameter ‘col’ [-Wunused-parameter]
- int solveMazeDFS(maze_t * maze, int col, int row)
-                                     ^
-maze.c:54:46: warning: unused parameter ‘row’ [-Wunused-parameter]
- int solveMazeDFS(maze_t * maze, int col, int row)
-                                              ^
 
 Testing createMaze (20 pts)
+    Correct width and height: +2
+    Correct start location: +4
+    Correct end location: +4
+    Cells correctly set: +10
+createMaze score: 20
 
 Testing destroyMaze (10 pts)
 destroyMaze score: 10 points if no memory leaks/errors otherwise 0
-==129020== Memcheck, a memory error detector
-==129020== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==129020== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==129020== Command: ./grader 1
-==129020== 
-==129020== 
-==129020== HEAP SUMMARY:
-==129020==     in use at exit: 3,041 bytes in 53 blocks
-==129020==   total heap usage: 54 allocs, 1 frees, 3,609 bytes allocated
-==129020== 
-==129020== LEAK SUMMARY:
-==129020==    definitely lost: 32 bytes in 1 blocks
-==129020==    indirectly lost: 3,009 bytes in 52 blocks
-==129020==      possibly lost: 0 bytes in 0 blocks
-==129020==    still reachable: 0 bytes in 0 blocks
-==129020==         suppressed: 0 bytes in 0 blocks
-==129020== Rerun with --leak-check=full to see details of leaked memory
-==129020== 
-==129020== For lists of detected and suppressed errors, rerun with: -s
-==129020== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==41578== Memcheck, a memory error detector
+==41578== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==41578== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==41578== Command: ./grader 1
+==41578== 
+==41578== 
+==41578== HEAP SUMMARY:
+==41578==     in use at exit: 0 bytes in 0 blocks
+==41578==   total heap usage: 54 allocs, 54 frees, 3,609 bytes allocated
+==41578== 
+==41578== All heap blocks were freed -- no leaks are possible
+==41578== 
+==41578== For lists of detected and suppressed errors, rerun with: -s
+==41578== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 
 Testing printMaze 
-PrintMazeScore: 0
+PrintMazeScore: 10
 
-0
-Failed the nightly test.
+40
+Pass the nightly test!!!
 This nightly test is focusing on compilation error not functionality test.
 This nightly report only tests on the released testcases.
 There are many hidden edge testcase for the MP. Please test it yourselve.
 HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
-Timestamp: 2022-04-09_17:35:29
+Timestamp: 2022-04-10_00:26:27
