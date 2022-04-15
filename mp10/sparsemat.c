@@ -8,7 +8,11 @@ This C program aims to read a matrix that has its information stored in a given
 file and store it as a linked list (list of tuples). Each node would store the
 value of the cell and its row and column.Values that are zero are would not be 
 stored. We can either update a existing node if value is non-zero or insert a 
-new node at proper location
+new node at proper location.The set_tuples function handles different cases we
+would encounter, including:1. exist and =0 2. exist and !=0 3. DNE and =0 
+4. DNE and !=0 
+A helper function sort_tuples is added to the
+original program to sort the list.
  */
 
 //helper function that sorts the tuples
