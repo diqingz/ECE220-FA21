@@ -4,8 +4,11 @@
 /*
 Introduction paragraph: 
 partner netID: staceyl2
-This C program aims to read a matrix that has its information stored in a given file and store it as a linked list (list of tuples). Each node would store the value of the cell and its row and column.Values that are zero are would not be stored. We can either update a existing node if value is non-zero or insert a new 
-node at proper location
+This C program aims to read a matrix that has its information stored in a given
+file and store it as a linked list (list of tuples). Each node would store the
+value of the cell and its row and column.Values that are zero are would not be 
+stored. We can either update a existing node if value is non-zero or insert a 
+new node at proper location
  */
 
 //helper function that sorts the tuples
