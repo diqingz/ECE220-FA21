@@ -18,23 +18,21 @@ original program to sort the list.
 //helper function that sorts the tuples
 int sort_tuples(sp_tuples_node* node1, sp_tuples_node* node2) {
  if ((node1->row) != (node2->row)) {
- return ((node1->row) > (node2->row));
+   return ((node1->row) > (node2->row));
+ }else {
+   return ((node1->col) > (node2->col));
  }
- else {
- return ((node1->col) > (node2->col));
- }
- 
  return -1;
 }
 
 sp_tuples * load_tuples(char* input_file)
 {
- int rows;
- int cols;
+  int rows,cols;
  sp_tuples* ptr = (sp_tuples*)malloc(sizeof(sp_tuples));
  FILE* fptr = fopen(input_file, "r");
+
  if (fptr == NULL) {
- printf("Error: %s not found", input_file);
+ printf("Error: %s file not found", input_file);
  return NULL;
  }
  fscanf(fptr, "%d %d\n", &rows, &cols);
@@ -42,8 +40,7 @@ sp_tuples * load_tuples(char* input_file)
  ptr->n = cols;
  ptr->nz = 0;
  ptr->tuples_head = NULL;
- int x;
- int y;
+ int x,y;
  double value;
  while (fscanf(fptr, "%d %d %lf\n", &y, &x, &value) == 3) {
  set_tuples(ptr, y, x, value);
@@ -62,11 +59,11 @@ double gv_tuples(sp_tuples * mat_t,int row,int col)
 
  while(node != NULL){
 
- if (node->row == row && node->col == col) {
- return node->value;
- } //if current node contains the rioght value, return
+   if (node->row == row && node->col == col) {
+     return node->value;
+   } //if current node contains the rioght value, return
  
- node = node->next;
+   node = node->next;
  } //if not the value desired, move on to next node
  
  return 0;//if cannot find, return 0
@@ -96,14 +93,12 @@ void set_tuples(sp_tuples * mat_t, int row, int col, double value)
 	 if (previous == NULL) {
 	   mat_t->tuples_head = node->next;
 	 }
-
- 
 	 else {
 	   previous->next = node->next;
 	 }
 
 	 free(node);
-	 mat_t->nz -= 1;
+	 mat_t->nz = mat_t->nz-1;
 	 return;
        }
        previous = node;
