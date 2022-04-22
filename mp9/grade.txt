@@ -1,0 +1,466 @@
+Compilation Results:
+********************
+
+Testing createMaze (20 pts)
+    Correct width and height: +2
+    Correct start location: +4
+    Correct end location: +4
+    Cells correctly set: +10
+createMaze score: 20
+
+Testing destroyMaze (10 pts)
+destroyMaze score: 10 points if no memory leaks/errors otherwise 0
+==46346== Memcheck, a memory error detector
+==46346== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==46346== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==46346== Command: ./grader 1
+==46346== 
+==46346== 
+==46346== HEAP SUMMARY:
+==46346==     in use at exit: 0 bytes in 0 blocks
+==46346==   total heap usage: 54 allocs, 54 frees, 3,609 bytes allocated
+==46346== 
+==46346== All heap blocks were freed -- no leaks are possible
+==46346== 
+==46346== For lists of detected and suppressed errors, rerun with: -s
+==46346== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Testing printMaze (10 pts)
+PrintMazeScore: 10
+
+Testing solveMaze (23 pts)
+Testing with maze from test1.txt (Simple maze)
+Correct return value: +2
+Solution to maze is valid: +5
+%%%%%
+%E**%
+%%%*%
+%S**%
+%%%%%
+solveMazeDFS test1 score: 7
+
+Testing with maze from test2.txt (Complex maze)
+Correct return value: +2
+Solution to maze is valid: +5
+solveMazeDFS test2 partial score: 7
+solveMazeDFS test2 total score: 7 
+
+Testing with maze from test3.txt (Unsolvable maze)
+Correct return value: +4
+All empty cells visisted during search: +5
+solveMazeDFS test3 score: 9
+
+
+Testing with input maze:
+4 4
+%SE%
+ %  
+ % %
+    
+Testing with maze from grade/gradetest0 
+Correct return value
+Solution to maze is valid
+%SE%
+ %  
+ % %
+    
+solveMazeDFS test grade/gradetest0 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ %  
+ % %
+S   
+Testing with maze from grade/gradetest1 
+Correct return value
+Solution to maze is valid
+%E*%
+ %*~
+ %*%
+S**~
+solveMazeDFS test grade/gradetest1 score: 1
+
+Testing with input maze:
+4 4
+%  %
+ %  
+ % %
+ES  
+Testing with maze from grade/gradetest2 
+Correct return value
+Solution to maze is valid
+%  %
+ %  
+ % %
+ES  
+solveMazeDFS test grade/gradetest2 score: 1
+
+Testing with input maze:
+4 4
+%ES%
+ %  
+ % %
+    
+Testing with maze from grade/gradetest3 
+Correct return value
+Solution to maze is valid
+%ES%
+ %  
+ % %
+    
+solveMazeDFS test grade/gradetest3 score: 1
+
+Testing with input maze:
+4 4
+%E %
+S%  
+ % %
+    
+Testing with maze from grade/gradetest4 
+Correct return value
+Solution to maze is valid
+%E*%
+S%*~
+*%*%
+***~
+solveMazeDFS test grade/gradetest4 score: 1
+
+Testing with input maze:
+4 4
+% S%
+ % E
+ % %
+    
+Testing with maze from grade/gradetest5 
+Correct return value
+Solution to maze is valid
+%~S%
+ %*E
+ % %
+    
+solveMazeDFS test grade/gradetest5 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ %  
+ %S%
+    
+Testing with maze from grade/gradetest6 
+Correct return value
+Solution to maze is valid
+%E*%
+ %*~
+ %S%
+    
+solveMazeDFS test grade/gradetest6 score: 1
+
+Testing with input maze:
+4 4
+%S %
+ %  
+ % %
+E   
+Testing with maze from grade/gradetest7 
+Correct return value
+Solution to maze is valid
+%S*%
+ %*~
+ %*%
+E** 
+solveMazeDFS test grade/gradetest7 score: 1
+
+Testing with input maze:
+4 4
+% S%
+ %  
+ % %
+  E 
+Testing with maze from grade/gradetest8 
+Correct return value
+Solution to maze is valid
+%~S%
+ %*~
+ %*%
+  E 
+solveMazeDFS test grade/gradetest8 score: 1
+
+Testing with input maze:
+4 4
+%S %
+ %  
+E% %
+    
+Testing with maze from grade/gradetest9 
+Correct return value
+Solution to maze is valid
+%S*%
+ %*~
+E%*%
+*** 
+solveMazeDFS test grade/gradetest9 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ %  
+S% %
+    
+Testing with maze from grade/gradetest10 
+Correct return value
+Solution to maze is valid
+%E*%
+~%*~
+S%*%
+***~
+solveMazeDFS test grade/gradetest10 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ %  
+ % %
+ S  
+Testing with maze from grade/gradetest11 
+Correct return value
+Solution to maze is valid
+%E*%
+~%*~
+~%*%
+~S*~
+solveMazeDFS test grade/gradetest11 score: 1
+
+Testing with input maze:
+4 4
+% S%
+ %  
+ % %
+E   
+Testing with maze from grade/gradetest12 
+Correct return value
+Solution to maze is valid
+%~S%
+ %*~
+ %*%
+E** 
+solveMazeDFS test grade/gradetest12 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ %S 
+ % %
+    
+Testing with maze from grade/gradetest13 
+Correct return value
+Solution to maze is valid
+%E*%
+ %S~
+ % %
+    
+solveMazeDFS test grade/gradetest13 score: 1
+
+Testing with input maze:
+4 4
+% S%
+ %E 
+ % %
+    
+Testing with maze from grade/gradetest14 
+Correct return value
+Solution to maze is valid
+%~S%
+ %E 
+ % %
+    
+solveMazeDFS test grade/gradetest14 score: 1
+
+Testing with input maze:
+4 4
+% E%
+S%  
+ % %
+    
+Testing with maze from grade/gradetest15 
+Correct return value
+Solution to maze is valid
+% E%
+S%*~
+*%*%
+***~
+solveMazeDFS test grade/gradetest15 score: 1
+
+Testing with input maze:
+4 4
+%  %
+E%S 
+ % %
+    
+Testing with maze from grade/gradetest16 
+Correct return value
+Solution to maze is valid
+%~~%
+E%S~
+*%*%
+*** 
+solveMazeDFS test grade/gradetest16 score: 1
+
+Testing with input maze:
+4 4
+% S%
+ %  
+ %E%
+    
+Testing with maze from grade/gradetest17 
+Correct return value
+Solution to maze is valid
+%~S%
+ %*~
+ %E%
+    
+solveMazeDFS test grade/gradetest17 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ % S
+ % %
+    
+Testing with maze from grade/gradetest18 
+Correct return value
+Solution to maze is valid
+%E*%
+ %*S
+ % %
+    
+solveMazeDFS test grade/gradetest18 score: 1
+
+Testing with input maze:
+4 4
+%E %
+ %  
+ % %
+   S
+Testing with maze from grade/gradetest19 
+Correct return value
+Solution to maze is valid
+%E*%
+~%*~
+~%*%
+~~*S
+solveMazeDFS test grade/gradetest19 score: 1
+
+Testing with input maze:
+4 4
+%  %
+ %  
+S% %
+E   
+Testing with maze from grade/gradetest20 
+Correct return value
+Solution to maze is valid
+%  %
+~%  
+S% %
+E   
+solveMazeDFS test grade/gradetest20 score: 1
+
+Testing with input maze:
+4 4
+%  %
+ %  
+ %S%
+  E 
+Testing with maze from grade/gradetest21 
+Correct return value
+Solution to maze is valid
+%~~%
+ %~~
+ %S%
+  E 
+solveMazeDFS test grade/gradetest21 score: 1
+
+Testing with input maze:
+4 4
+%  %
+ %  
+S%E%
+    
+Testing with maze from grade/gradetest22 
+Correct return value
+Solution to maze is valid
+%  %
+~%  
+S%E%
+***~
+solveMazeDFS test grade/gradetest22 score: 1
+
+Testing with input maze:
+4 4
+%S %
+E%  
+ % %
+    
+Testing with maze from grade/gradetest23 
+Correct return value
+Solution to maze is valid
+%S*%
+E%*~
+*%*%
+*** 
+solveMazeDFS test grade/gradetest23 score: 1
+
+Testing with input maze:
+4 4
+% E%
+ %  
+S% %
+    
+Testing with maze from grade/gradetest24 
+Correct return value
+Solution to maze is valid
+% E%
+~%*~
+S%*%
+***~
+solveMazeDFS test grade/gradetest24 score: 1
+
+Testing with input maze:
+4 4
+% E%
+ % S
+ % %
+    
+Testing with maze from grade/gradetest25 
+Correct return value
+Solution to maze is valid
+% E%
+ %*S
+ % %
+    
+solveMazeDFS test grade/gradetest25 score: 1
+
+Testing with input maze:
+4 4
+%S %
+ %  
+ % %
+ E  
+Testing with maze from grade/gradetest26 
+Correct return value
+Solution to maze is valid
+%S*%
+ %*~
+ %*%
+ E* 
+solveMazeDFS test grade/gradetest26 score: 1
+
+Score for 27 tests: 27
+Grade:
+******
+Late submission: 0
+Functionality: 90 
+Comments and Style: 5 
+Intro paragraph: 5
+Total: 100
