@@ -1,5 +1,5 @@
 student: shape.hpp main.cpp
-	g++ main.cpp shape.hpp -o mp12 
+	g++ main.cpp shape.hpp -o mp12 -Wall -Werror
 
 verify:  shape.hpp check.hpp verify.cpp gshape.hpp
 	g++ -g -c shape.hpp -o shape.o 
