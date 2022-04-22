@@ -1,0 +1,27 @@
+Compilation Results:
+********************
+
+./floorplanner grade/circuit1.txt
+
+****************************** VERIFICATION ******************************
+Circuit: 4 golden_modules, slicing tree size = 4 leaves and 3 internals
+(1) Function  'init_slicing_tree' : correct!   +25
+(2) Function  'is_leaf'           : correct!   +5
+(3) Function  'is_internal'       : correct!   +5
+(4) Function  'is_in_subtree'     : correct!   +10
+(5) Procedure 'rotate'            : correct!   +5
+(6) Procedure 'recut'             : correct!   +5
+(7) Procedure 'swap_module'       : correct!   +5
+(8) Procedure 'swap_topology'     : correct!   +10
+(9) Procedure 'get_expression'    : correct!   +15
+(10)Procedure 'get_total_resource': correct!   +5
+Your final score for this MP      : 90
+**************************** END VERIFICATION ****************************
+
+
+Pass the nightly test!!!
+This nightly test is focusing on compilation error not functionality test.
+This nightly report only tests on the released testcases.
+There are many hidden edge testcase for the MP. Please test it yourselve.
+HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
+Timestamp: 2022-04-21_19:24:05
