@@ -1,5 +1,17 @@
 Compilation Results:
 ********************
+In file included from main.cpp:3:0:
+shape.hpp: In member function ‘std::string Shape::getName()’:
+shape.hpp:27:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+shape.hpp: In member function ‘std::string Shape::getName()’:
+shape.hpp:27:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+make: *** [student] Error 1
  
 
  ------------------- Begin Verifying MP12 ---------------------
@@ -9,4 +21,4 @@ This nightly test is focusing on compilation error not functionality test.
 This nightly report only tests on the released testcases.
 There are many hidden edge testcase for the MP. Please test it yourselve.
 HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
-Timestamp: 2022-04-23_01:53:45
+Timestamp: 2022-04-23_03:12:37
