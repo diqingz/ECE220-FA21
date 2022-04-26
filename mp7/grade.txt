@@ -1,0 +1,107 @@
+Compilation Results:
+********************
+
+******Testing mp7******
+------------------
+Input sudoku:
+ 0 2 0 0 0 0 0 0 0
+ 0 0 0 6 0 0 0 0 3
+ 0 7 4 0 8 0 0 0 0
+ 0 0 0 0 0 3 0 0 2
+ 0 8 0 0 4 0 0 1 0
+ 6 0 0 5 0 0 0 0 0
+ 0 0 0 0 1 0 7 8 0
+ 5 0 0 0 0 9 0 0 0
+ 0 0 0 0 0 0 0 4 0
+Your output sudoku:
+ 1 2 6 4 3 7 9 5 8
+ 8 9 5 6 2 1 4 7 3
+ 3 7 4 9 8 5 1 2 6
+ 4 5 7 1 9 3 8 6 2
+ 9 8 3 2 4 6 5 1 7
+ 6 1 2 5 7 8 3 9 4
+ 2 6 9 3 1 4 7 8 5
+ 5 4 8 7 6 9 2 3 1
+ 7 3 1 8 5 2 6 4 9
+------------------
+------------------- Begin Verifying MP7 ---------------------
+[+10]: Your <is_val_in_row> is correct.
+[+10]: Your <is_val_in_col> is correct.
+[+30]: Your <is_val_in_3x3_zone> is correct.
+[+40]: Your <solve_sudoku> is correct.
+Your final score for this MP is 90
+-------------------- End Verifying MP7 ----------------------
+
+
+------------------
+Input sudoku:
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0
+Your output sudoku:
+ 2 4 6 1 3 5 8 7 9
+ 1 3 5 8 7 9 2 4 6
+ 8 7 9 2 4 6 1 3 5
+ 5 6 3 4 1 2 7 9 8
+ 4 1 2 7 9 8 5 6 3
+ 7 9 8 5 6 3 4 1 2
+ 6 5 4 3 2 1 9 8 7
+ 3 2 1 9 8 7 6 5 4
+ 9 8 7 6 5 4 3 2 1
+------------------
+------------------- Begin Verifying MP7 ---------------------
+[+10]: Your <is_val_in_row> is correct.
+[+10]: Your <is_val_in_col> is correct.
+[+30]: Your <is_val_in_3x3_zone> is correct.
+[+40]: Your <solve_sudoku> is correct.
+Your final score for this MP is 90
+-------------------- End Verifying MP7 ----------------------
+
+
+------------------
+Input sudoku:
+ 5 8 1 4 2 6 3 7 9
+ 3 6 4 5 7 9 8 1 2
+ 9 7 2 1 3 8 4 6 5
+ 6 2 3 7 8 5 9 4 1
+ 1 5 9 3 6 4 7 2 8
+ 8 4 7 9 1 2 6 5 3
+ 4 1 8 2 9 7 5 3 6
+ 2 9 5 6 4 3 1 8 7
+ 7 3 6 8 5 1 2 9 4
+Your output sudoku:
+ 5 8 1 4 2 6 3 7 9
+ 3 6 4 5 7 9 8 1 2
+ 9 7 2 1 3 8 4 6 5
+ 6 2 3 7 8 5 9 4 1
+ 1 5 9 3 6 4 7 2 8
+ 8 4 7 9 1 2 6 5 3
+ 4 1 8 2 9 7 5 3 6
+ 2 9 5 6 4 3 1 8 7
+ 7 3 6 8 5 1 2 9 4
+------------------
+------------------- Begin Verifying MP7 ---------------------
+[+10]: Your <is_val_in_row> is correct.
+[+10]: Your <is_val_in_col> is correct.
+[+30]: Your <is_val_in_3x3_zone> is correct.
+[+40]: Your <solve_sudoku> is correct.
+Your final score for this MP is 90
+-------------------- End Verifying MP7 ----------------------
+
+
+Your score for test 1 is : 30
+Your score for test 2 is : 30
+Your score for test 3 is : 30
+Grade:
+******
+Late submission: 0
+Functionality: 90
+Comments and Style: 5 
+Intro paragraph: 5
+Total: 100
