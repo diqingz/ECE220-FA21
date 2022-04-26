@@ -1,0 +1,64 @@
+Compilation Results:
+********************
+
+load_tuples test: 10 pts total
+Test 1: load tuple
++5: load_tuples: m,n,nnz match
++5: load_tuples: nodes match
+
+gv_tuples test: 6 pts total
+Test 2: gv
++6: gv_tuples
+
+set_tuples test: 44 pts total
+Test 3-0: set
++6: set_tuples: delete node at tail
+Test 3-1: set
++6: set_tuples: add node at head
+Test 3-2: set
++6: set_tuples: add node in the middle
+Test 3-3: set
++6: set_tuples: add node at tail
+Test 3-4: set
++6: set_tuples: delete node at head
+Test 3-5: set
++8: set_tuples: delete node middle
+Test 3-6: set
++6: set_tuples: delete node at tail
+
+add_tuples test: 15 pts total
+Test 4: add
+ +15: add_tuples pass
+
+save_tuples test: 10 pts total
+Test 6: save
+testing save_tuples, saving to save_test_tuples.txt
+
+Printing diff of save tuples. If empty, 10 pts
+diff: grade/save_test_tuples.txt: No such file or directory
+
+10
+destroy_tuples test: 5 pts total
+Printing valgrind output. If no memory leaks/errors, 5 pts
+==110133== Memcheck, a memory error detector
+==110133== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==110133== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==110133== Command: ./test0 7
+==110133== 
+==110133== 
+==110133== HEAP SUMMARY:
+==110133==     in use at exit: 0 bytes in 0 blocks
+==110133==   total heap usage: 65 allocs, 65 frees, 2,648 bytes allocated
+==110133== 
+==110133== All heap blocks were freed -- no leaks are possible
+==110133== 
+==110133== For lists of detected and suppressed errors, rerun with: -s
+==110133== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Grade:
+******
+Late submission: 0
+Functionality: 90
+Comments and Style: 5 
+Intro paragraph: 5
+Total: 100
