@@ -1,0 +1,180 @@
+Compilation Results:
+********************
+In file included from main.cpp:3:0:
+shape.hpp: In member function ‘std::string Shape::getName()’:
+shape.hpp:27:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double Rectangle<T>::getArea() const’:
+shape.hpp:51:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double Rectangle<T>::getVolume() const’:
+shape.hpp:55:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double Circle::getArea() const’:
+shape.hpp:91:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double Circle::getVolume() const’:
+shape.hpp:95:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Circle Circle::operator+(const Circle&)’:
+shape.hpp:99:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Circle Circle::operator-(const Circle&)’:
+shape.hpp:103:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘double Circle::getRadius() const’:
+shape.hpp:107:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double Sphere::getVolume() const’:
+shape.hpp:129:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘virtual double Sphere::getArea() const’:
+shape.hpp:133:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Sphere Sphere::operator+(const Sphere&)’:
+shape.hpp:137:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Sphere Sphere::operator-(const Sphere&)’:
+shape.hpp:141:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘double Sphere::getRadius() const’:
+shape.hpp:145:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double RectPrism::getVolume() const’:
+shape.hpp:164:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double RectPrism::getArea() const’:
+shape.hpp:168:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘RectPrism RectPrism::operator+(const RectPrism&)’:
+shape.hpp:172:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘RectPrism RectPrism::operator-(const RectPrism&)’:
+shape.hpp:176:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘double RectPrism::getWidth() const’:
+shape.hpp:180:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double RectPrism::getLength() const’:
+shape.hpp:184:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double RectPrism::getHeight() const’:
+shape.hpp:188:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+shape.hpp: In member function ‘std::string Shape::getName()’:
+shape.hpp:27:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double Rectangle<T>::getArea() const’:
+shape.hpp:51:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double Rectangle<T>::getVolume() const’:
+shape.hpp:55:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double Circle::getArea() const’:
+shape.hpp:91:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double Circle::getVolume() const’:
+shape.hpp:95:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Circle Circle::operator+(const Circle&)’:
+shape.hpp:99:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Circle Circle::operator-(const Circle&)’:
+shape.hpp:103:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘double Circle::getRadius() const’:
+shape.hpp:107:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double Sphere::getVolume() const’:
+shape.hpp:129:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘virtual double Sphere::getArea() const’:
+shape.hpp:133:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Sphere Sphere::operator+(const Sphere&)’:
+shape.hpp:137:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘Sphere Sphere::operator-(const Sphere&)’:
+shape.hpp:141:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘double Sphere::getRadius() const’:
+shape.hpp:145:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double RectPrism::getVolume() const’:
+shape.hpp:164:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘virtual double RectPrism::getArea() const’:
+shape.hpp:168:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘RectPrism RectPrism::operator+(const RectPrism&)’:
+shape.hpp:172:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘RectPrism RectPrism::operator-(const RectPrism&)’:
+shape.hpp:176:2: error: no return statement in function returning non-void [-Werror=return-type]
+  } 
+  ^
+shape.hpp: In member function ‘double RectPrism::getWidth() const’:
+shape.hpp:180:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double RectPrism::getLength() const’:
+shape.hpp:184:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+shape.hpp: In member function ‘double RectPrism::getHeight() const’:
+shape.hpp:188:2: error: no return statement in function returning non-void [-Werror=return-type]
+  }
+  ^
+cc1plus: all warnings being treated as errors
+make: *** [student] Error 1
+ 
+
+ ------------------- Begin Verifying MP12 ---------------------
+Shape::getName incorrect 
+Rectangle::getArea() incorrect 
+Rectangle::operator + incorrect 
+Rectangle::operator - incorrect 
+
+Failed the nightly test.
+This nightly test is focusing on compilation error not functionality test.
+This nightly report only tests on the released testcases.
+There are many hidden edge testcase for the MP. Please test it yourselve.
+HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
+Timestamp: 2022-04-25_00:22:00
