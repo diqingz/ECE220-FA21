@@ -167,14 +167,10 @@ make: *** [student] Error 1
  
 
  ------------------- Begin Verifying MP12 ---------------------
-Shape::getName incorrect 
-Rectangle::getArea() incorrect 
-Rectangle::operator + incorrect 
-Rectangle::operator - incorrect 
 
 Failed the nightly test.
 This nightly test is focusing on compilation error not functionality test.
 This nightly report only tests on the released testcases.
 There are many hidden edge testcase for the MP. Please test it yourselve.
 HIGHLY RECOMMEND YOU TO START YOUR MP EARLY!!!!!!!
-Timestamp: 2022-04-28_00:24:23
+Timestamp: 2022-04-28_12:40:19
