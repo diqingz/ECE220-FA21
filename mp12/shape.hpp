@@ -13,7 +13,8 @@ using namespace std;
 
 /*
 	Partners netID: staceyl2
-
+This header file works together with main.cpp to create a program that creates a shape hierachy where shape class is the base class and Circle, Rectangle, Sphere, RectPrism are derived classes from it. It would then read the file provided and call different constuctors that for different shapes. It would finally return the max area and max volume after calculation.
+This program uses list and iterations.
 */
 
 //Base class
