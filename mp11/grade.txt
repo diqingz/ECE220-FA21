@@ -1,0 +1,28 @@
+Compilation Results:
+********************
+
+./floorplanner grade/circuit3.txt
+
+****************************** VERIFICATION ******************************
+Circuit: 7 golden_modules, slicing tree size = 7 leaves and 6 internals
+(1) Function  'init_slicing_tree' : correct!   +25
+(2) Function  'is_leaf'           : correct!   +5
+(3) Function  'is_internal'       : correct!   +5
+(4) Function  'is_in_subtree'     : correct!   +10
+(5) Procedure 'rotate'            : correct!   +5
+(6) Procedure 'recut'             : correct!   +5
+(7) Procedure 'swap_module'       : correct!   +5
+(8) Procedure 'swap_topology'     : correct!   +10
+(9) Procedure 'get_expression'    : correct!   +15
+(10)Procedure 'get_total_resource': correct!   +5
+Your final score for this MP      : 90
+**************************** END VERIFICATION ****************************
+
+
+Grade:
+******
+Late submission: 0
+Functionality: 90
+Comments and Style: 5 
+Intro paragraph: 5
+Total: 100
